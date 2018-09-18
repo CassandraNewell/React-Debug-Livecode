@@ -6,8 +6,6 @@ import data from './constants/data';
 import App from './components/app'
 
 ReactDOM.render(
-  <App
-    animals={data}
-  />,
+  <App animals={data} />,
   document.getElementById('app')
 );
