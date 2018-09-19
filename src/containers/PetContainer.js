@@ -2,9 +2,9 @@ import React from 'react'
 import PetTile from '../components/PetTile'
 
 const PetContainer = props => {
-  let pets = props.pets.map(petProp => {
+  let pets = props.pets.map(pet => {
     return(
-      <PetTile key={petProp.id} petData={petProp} />
+      <PetTile key={pet.id} pet={pet} />
     )
   })
 
