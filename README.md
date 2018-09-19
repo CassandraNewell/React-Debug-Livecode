@@ -1,15 +1,6 @@
-## Floofs of Launch
-A React app live-coded as part of Launch Academy's intro to React curriculum. The goal is to practice building stateless components, nesting components inside other components, and `map`-ping over data to create collections of React components.
+# Floofs of Launch: Stateful Version
+This clinic builds on a refactor of the Stateless version presented in the Wk3 Monday clinic.
 
-The `App.js` top-level component should render a `CatSection` and a `DogSection`. It passes down data from the constant `data.js`. You should edit the `CatSection` and `DogSection` to `map` over the `data` coming down through `props` and return `CatTile`s or `DogTiles` respectively.
+Goal: Although we love all our floofs, we want to indicate which one is our favorite for the day!
 
-As a potential refactor, create one `AnimalContainer` that renders both `CatTile`s and `DogTile`s.
-
-## Setup
-To get set up, run the following:
-
-```no-highlight
-  npm install
-  npm start
-```
-and navigate to `localhost:8080`
+Using state, we will store our `favorite` floof. Clicking on a heart icon will toggle which floof is our favorite for that day and will change the empty heart icon to a full heart icon.
