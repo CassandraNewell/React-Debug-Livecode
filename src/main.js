@@ -3,11 +3,11 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import data from './constants/data';
-import App from './components/app'
+import App from './containers/app'
 
 ReactDOM.render(
   <App
-    animals={data}
+    animals={data.animals}
   />,
   document.getElementById('app')
 );

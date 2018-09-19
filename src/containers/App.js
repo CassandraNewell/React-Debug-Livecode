@@ -1,18 +1,13 @@
 import React from 'react';
-import DogContainer from './DogContainer'
-import CatContainer from './CatContainer'
-import BugContainer from './BugContainer'
+import PetContainer from './PetContainer'
 
 const App = props => {
   return(
-    <div className = "app">
+    <div className="app">
       <h1>AmyLynn's Pets!</h1>
-      <DogContainer dogProps={props.animals.dogs} />
-      <CatContainer catProps={props.animals.cats}/>
-      <BugContainer bugProps={props.animals.bugs}/>
+      <PetContainer pets={props.animals} />
     </div>
   )
-
 }
 
 export default App;
