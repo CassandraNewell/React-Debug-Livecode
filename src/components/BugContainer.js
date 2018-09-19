@@ -2,10 +2,15 @@ import React from 'react'
 import BugTile from './BugTile'
 
 const BugContainer = props => {
+  let bugs = props.bugProps.map(bugProp => {
+    return(
+      <BugTile key={bugProp.id} bugData={bugProp} />
+    )
+  })
+
   return(
     <div className="container">
-      <BugTile bugData={props.bugProps[0]} />
-      <BugTile bugData={props.bugProps[1]} />
+      {bugs}
     </div>
   )
 }

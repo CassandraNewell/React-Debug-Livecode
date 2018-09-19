@@ -2,10 +2,15 @@ import React from 'react'
 import CatTile from './CatTile'
 
 const CatContainer = props => {
+  let cats = props.catProps.map(catProp => {
+    return(
+      <CatTile key={catProp.id} catData={catProp} />
+    )
+  })
+  
   return(
     <div className="container">
-      <CatTile catData={props.catProps[0]} />
-      <CatTile catData={props.catProps[1]}/>
+      {cats}
     </div>
   )
 }

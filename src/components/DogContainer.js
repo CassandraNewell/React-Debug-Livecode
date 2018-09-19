@@ -2,10 +2,15 @@ import React from 'react'
 import DogTile from './DogTile'
 
 const DogContainer = props => {
+  let dogs = props.dogProps.map(dogProp => {
+    return(
+      <DogTile key={dogProp.id} dogData={dogProp} />
+    )
+  })
+
   return(
     <div className="container">
-      <DogTile dogData={props.dogProps[0]} />
-      <DogTile dogData={props.dogProps[1]}/>
+      {dogs}
     </div>
   )
 }
