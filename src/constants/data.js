@@ -29,11 +29,25 @@ const animals = {
       name: "Catniss",
       image: "https://i.imgur.com/HY6XJLo.jpg",
       human: "Casi"
+    },
+    {
+      id: 5,
+      personality: "likes warming his rear on technology",
+      name: "Bingo",
+      image: "http://i.imgur.com/ntz2sQe.jpg",
+      human: "AmyLynn"
+    },
+    {
+      id: 6,
+      personality: "likes mobile tech",
+      name: "Storrow",
+      image: "http://i.imgur.com/oSr7eBY.jpg",
+      human: "AmyLynn"
     }
   ],
   bugs: [
     {
-      id: 5,
+      id: 7,
       species: "Madagascar Hissing Cockroach, (Gromphadorhina portentosa)",
       personality: "territorial, loves the ladies",
       name: "Caelian",
@@ -41,7 +55,7 @@ const animals = {
       human: "AmyLynn"
     },
     {
-      id: 6,
+      id: 8,
       species: "Madagascar Hissing Cockroach (Gromphadorhina portentosa)",
       personality: "mellow, loves to reproduce",
       name: "Aventine",
