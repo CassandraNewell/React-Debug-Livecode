@@ -19,6 +19,7 @@ const animals = {
     {
       id: 3,
       personality: "has a triangle nose perfect for booping",
+      breed: "snowshoe",
       name: "Juliabeast",
       image: "https://i.imgur.com/8PjaghN.jpg",
       human: "Casi"
@@ -26,6 +27,7 @@ const animals = {
     {
       id: 4,
       personality: "too smart for her own good",
+      breed: "snowshoe",
       name: "Catniss",
       image: "https://i.imgur.com/HY6XJLo.jpg",
       human: "Casi"
@@ -33,6 +35,7 @@ const animals = {
     {
       id: 5,
       personality: "likes warming his rear on technology",
+      breed: "tuxedo",
       name: "Bingo",
       image: "http://i.imgur.com/ntz2sQe.jpg",
       human: "AmyLynn"
@@ -41,6 +44,7 @@ const animals = {
       id: 6,
       personality: "likes mobile tech",
       name: "Storrow",
+      breed: "tuxedo",
       image: "http://i.imgur.com/oSr7eBY.jpg",
       human: "AmyLynn"
     }
