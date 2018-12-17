@@ -5,4 +5,7 @@ import ReactDOM from "react-dom";
 import data from "./constants/data";
 import App from "./components/app";
 
-ReactDOM.render(<App animals={data} />, document.getElementById("app"));
+ReactDOM.render(
+  <App animals={data} />, 
+  document.getElementById("app")
+);
