@@ -1,7 +1,6 @@
 import React from 'react'
 
 const PetTile = props => {
-
   let breed
   if (props.pet.breed) {
     breed = <h5>{props.pet.breed}</h5>
@@ -17,6 +16,15 @@ const PetTile = props => {
     personality = <h5>{props.pet.personality}</h5>
   }
 
+  let iconClass
+  if (props.favorite) {
+    // fontAwesome heart icon
+    // iconClass = "fas fa-heart fa-5x"
+    iconClass = "selected"
+  } else {
+    iconClass = "far fa-heart fa-5x"
+  }
+
   return(
     <div className="tile row">
       <div className="column small-6">
@@ -26,7 +34,7 @@ const PetTile = props => {
         {personality}
         <h5>{props.pet.human}</h5>
         <button>
-          <i className="far fa-heart fa-5x" onClick={props.handleClick} ></i>
+          <i className={iconClass} onClick={props.handleClick} ></i>
         </button>
       </div>
       <div className="column small-6">
