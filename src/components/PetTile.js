@@ -18,13 +18,20 @@ const PetTile = props => {
   }
 
   return(
-    <div className="tile">
-      <h3>{props.pet.name}</h3>
-      {breed}
-      {species}
-      {personality}
-      <h5>{props.pet.human}</h5>
-      <img src={props.pet.image} />
+    <div className="tile row">
+      <div className="column small-6">
+        <h3>{props.pet.name}</h3>
+        {breed}
+        {species}
+        {personality}
+        <h5>{props.pet.human}</h5>
+        <button>
+          <i className="far fa-heart fa-5x" onClick={props.handleClick} ></i>
+        </button>
+      </div>
+      <div className="column small-6">
+        <img src={props.pet.image} />
+      </div>
     </div>
   )
 }
